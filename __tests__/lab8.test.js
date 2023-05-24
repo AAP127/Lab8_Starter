@@ -1,4 +1,4 @@
-const browser = await puppeteer.launch({ executablePath: 'C:\Program Files\Google\Chrome\Application\chrome.exe' });
+//const browser = await puppeteer.launch({ executablePath: 'C:\Program Files\Google\Chrome\Application\chrome.exe' });
 
 describe('Basic user flow for Website', () => {
   // First, visit the lab 8 website
@@ -40,8 +40,8 @@ describe('Basic user flow for Website', () => {
       if (plainValue.price.length == 0) { allArePopulated = false; }
       if (plainValue.image.length == 0) { allArePopulated = false; }
       // Expect allArePopulated to still be true
-      expect(allArePopulated).toBe(true);
     }
+    expect(allArePopulated).toBe(true);
   }, 10000);
 
   // Check to make sure that when you click "Add to Cart" on the first <product-item> that
