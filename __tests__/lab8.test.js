@@ -53,7 +53,7 @@ describe('Basic user flow for Website', () => {
     const prodItem = await page.$('product-item');
     
     // Grab the shadowRoot of that element (it's a property), then query a button from that shadowRoot.
-    const elemButton = prodItem.shadowRoot.querySelector("button");
+    const elemButton = prodItem.getProperty(shadowRoot).querySelector("button");
 
     // Once you have the button, you can click it and check the innerText property of the button.
     await page.click(elemButton);
