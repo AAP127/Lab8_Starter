@@ -207,6 +207,6 @@ it('Checking the localStorage to make sure cart is correct', async () => {
   });
 
 
-  expect(cartItem).toBe([]);  //Json stringify? String around brackets?
+  expect(cartItem).toBe("[]");  //Json stringify? String around brackets?
 });
 });
