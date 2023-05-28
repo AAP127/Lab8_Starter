@@ -128,7 +128,7 @@ it('Checking the localStorage to make sure cart is correct', async () => {
   // TODO - Step 5
   // At this point he item 'cart' in localStorage should be 
   //Get 'cart' item from local storage
-  const cartItem = page.evaluate(() => {
+  const cartItem = await page.evaluate(() => {
     return localStorage.getItem('cart');
   });
 
@@ -202,7 +202,11 @@ it('Checking the localStorage to make sure cart is correct', async () => {
   console.log('Checking the localStorage...');
   // TODO - Step 8
   // At this point he item 'cart' in localStorage should be '[]', check to make sure it is
-  const cartItem = localStorage.getItem("cart");
+  const cartItem = await page.evaluate(() => {
+    return localStorage.getItem('cart');
+  });
+
+
   expect(cartItem).toBe([]);  //Json stringify? String around brackets?
 });
 });
