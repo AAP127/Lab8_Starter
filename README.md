@@ -1,4 +1,8 @@
 # Lab 8 - Starter
+## Aatash Pestonjamasp
+-Screenshots below questions
+
+### Questions
 1) Where would you fit your automated tests in your Recipe project development pipeline? Select one of the following and explain why.
 
 * You would want to put automated tests in a Github action that runs whenever code is pushed (option 1). This is preferable since it avoids issues of the program running locally but not online. Additionally, the testing would be automated, saving time when deploying.
@@ -14,3 +18,8 @@
 4) Would you use a unit test to test the “max message length” feature of a messaging application? Why or why not? For this question, assume the “max message length” feature prevents the user from typing more than 80 characters.
 
 * This application could be good for a unit test. It is concievable that this functioanlity would take an input message and simply check if the length is over 80 characters, which could be tested at a small scale with a few cases.
+
+### Screenshots
+#### * Skipped console log output in screenshots
+![Tests part 1](screenshots/npm_test_1.PNG)
+![Tests Part 2](screenshots/npm_test_2.PNG)
